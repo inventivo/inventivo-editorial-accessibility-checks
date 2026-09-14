@@ -1,0 +1,15 @@
+.editorial-accessibility-checks .wp-list-table { table-layout: auto; }
+.editorial-accessibility-checks .column-title { min-width: 15rem; }
+.editorial-accessibility-checks details { margin-top: .6rem; }
+.editorial-accessibility-checks summary { cursor: pointer; }
+.editorial-accessibility-checks details li { overflow-wrap: anywhere; }
+.editorial-accessibility-checks :is(a, button, input, select, summary):focus-visible {
+    outline: 2px solid #1d2327;
+    outline-offset: 3px;
+}
+.editorial-accessibility-checks-filters { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; }
+@media screen and (max-width: 782px) {
+    .editorial-accessibility-checks .wp-list-table td:not(.column-primary) { display: block; }
+    .editorial-accessibility-checks .wp-list-table .column-title { min-width: 0; }
+    .editorial-accessibility-checks .toggle-row { display: none; }
+}

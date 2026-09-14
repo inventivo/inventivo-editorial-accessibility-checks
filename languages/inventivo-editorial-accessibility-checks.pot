@@ -1,0 +1,215 @@
+# Copyright (C) 2026 inventivo
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: inventivo Editorial Accessibility Checks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/inventivo-editorial-accessibility-checks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-10T15:19:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: inventivo-editorial-accessibility-checks\n"
+
+#. Plugin Name of the plugin
+#: inventivo-editorial-accessibility-checks.php
+msgid "inventivo Editorial Accessibility Checks"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: inventivo-editorial-accessibility-checks.php
+msgid "https://www.inventivo.de/"
+msgstr ""
+
+#. Description of the plugin
+#: inventivo-editorial-accessibility-checks.php
+msgid "Finds five common editorial accessibility issues in your posts and pages and lists them in one screen. Reports only, changes nothing."
+msgstr ""
+
+#. Author of the plugin
+#: inventivo-editorial-accessibility-checks.php
+msgid "inventivo"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:20
+#: includes/class-editorial-accessibility-checks-admin.php:85
+msgid "Editorial Accessibility Checks"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:20
+msgid "Accessibility Checks"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:33
+msgid "Please use the Scan now button."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:46
+msgid "You cannot view these checks."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:88
+#: includes/class-editorial-accessibility-checks-admin.php:138
+#: includes/class-editorial-accessibility-checks-plugin.php:120
+#: includes/class-editorial-accessibility-checks-rules.php:47
+msgid "The PHP DOM extension is required to run these checks."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:90
+msgid "Automated checks can only detect a part of the accessibility issues on a page. Testing by a person, including with a screen reader and by keyboard, remains necessary."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:91
+msgid "These checks read the saved editor content of your posts and pages. Content added by your theme, by page builders, by shortcodes or by scripts is not read."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:92
+msgid "The checks are based on the WCAG 2.2 success criteria. The plugin reports what it finds. It does not change your content and it does not change your website."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:93
+msgid "No overlay. No widget on your site. No automatic fixes. This plugin only reads and reports."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:94
+msgid "Results are stored in your own database. Nothing is sent to us or to any third party."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:98
+msgid "No pages have been checked yet. The first scan runs automatically, or you can start it now."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:102
+msgid "Scan now"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:105
+msgid "Rule"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:105
+msgid "All rules"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:109
+#: includes/class-editorial-accessibility-checks-list-table.php:24
+msgid "Content type"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:109
+msgid "All content types"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:115
+msgid "Filter"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:116
+#: includes/class-editorial-accessibility-checks-admin.php:117
+msgid "Search titles"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:122
+msgid "This plugin does not determine, certify or guarantee conformance with WCAG, the European Accessibility Act, the German BFSG, the ADA or any other standard or law. Whether your website meets legal requirements is a question only you and your advisers can answer."
+msgstr ""
+
+#. translators: %d: Number of posts checked in this batch.
+#: includes/class-editorial-accessibility-checks-admin.php:134
+#, php-format
+msgid "This batch checked %d posts. Further batches run automatically."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:136
+#: includes/class-editorial-accessibility-checks-plugin.php:128
+msgid "A scan batch is already running. Please try again later."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:140
+#: includes/class-editorial-accessibility-checks-plugin.php:98
+#: includes/class-editorial-accessibility-checks-plugin.php:105
+#: includes/class-editorial-accessibility-checks-plugin.php:110
+msgid "The scan could not save its results. Please try again later."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-admin.php:142
+#: includes/class-editorial-accessibility-checks-plugin.php:153
+msgid "The scan could not read the posts. Please try again later."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:24
+msgid "Title"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:26
+msgid "Total findings"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:26
+msgid "Last checked"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:44
+msgid "No posts match these filters. Pages that have not been checked yet are not shown here. This does not mean the pages are accessible."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:97
+msgid "(no title)"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:103
+#: includes/class-editorial-accessibility-checks-list-table.php:135
+#: includes/class-editorial-accessibility-checks-list-table.php:139
+msgid "Not checked yet."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:107
+msgid "This content could not be analysed. No check has been performed for this page."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:110
+msgid "No issues found by these 5 checks. This does not mean the page is accessible."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:112
+msgid "Show findings"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:113
+msgid "Findings of these 5 checks in the saved editor content. Other accessibility issues on this page are not listed here."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-list-table.php:123
+msgid "Only the first 50 findings are stored. The counts include all findings."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-plugin.php:36
+msgid "Every five minutes"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-plugin.php:117
+msgid "You cannot run these checks."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-rules.php:17
+msgid "Missing alternative text"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-rules.php:18
+msgid "Unclear link text"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-rules.php:19
+msgid "Skipped heading level"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-rules.php:20
+msgid "Form field without label"
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-rules.php:21
+msgid "Table without header"
+msgstr ""
