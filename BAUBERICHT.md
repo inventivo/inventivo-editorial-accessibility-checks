@@ -1,4 +1,4 @@
-# Baubericht: Editorial Accessibility Checks
+# Baubericht: inventivo Editorial Accessibility Checks
 
 Stand: 10.09.2026. Version 1.0.0.
 

@@ -11,6 +11,7 @@
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: inventivo-editorial-accessibility-checks
+ * Domain Path: /languages
  *
  * @package Editorial_Accessibility_Checks
  */
