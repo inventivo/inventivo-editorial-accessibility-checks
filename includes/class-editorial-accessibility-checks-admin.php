@@ -23,7 +23,7 @@ class Editorial_Accessibility_Checks_Admin {
 
 	public static function styles( $hook ) {
 		if ( 'tools_page_editorial-accessibility-checks' === $hook && current_user_can( 'edit_others_posts' ) ) {
-			wp_enqueue_style( 'editorial_accessibility_checks_admin', plugins_url( '../assets/admin.css', __FILE__ ), array(), '1.0.0' );
+			wp_enqueue_style( 'editorial_accessibility_checks_admin', plugins_url( '../assets/admin.css', __FILE__ ), array(), '1.0.1' );
 		}
 	}
 
@@ -85,7 +85,7 @@ class Editorial_Accessibility_Checks_Admin {
 		echo '<div class="wrap editorial-accessibility-checks"><h1>' . esc_html__( 'Editorial Accessibility Checks', 'inventivo-editorial-accessibility-checks' ) . '</h1>';
 		self::notice();
 		if ( ! class_exists( 'DOMDocument' ) ) {
-			wp_admin_notice( esc_html__( 'The PHP DOM extension is required to run these checks.', 'inventivo-editorial-accessibility-checks' ), array( 'type' => 'error', 'attributes' => array( 'role' => 'alert' ) ) );
+			wp_admin_notice( esc_html__( 'The PHP DOM extension is required to run these checks. Ask your hosting provider to enable the PHP extensions dom and xml, then start the scan again.', 'inventivo-editorial-accessibility-checks' ), array( 'type' => 'error', 'attributes' => array( 'role' => 'alert' ), 'dismissible' => true ) );
 		}
 		echo '<p>' . esc_html__( 'Automated checks can only detect a part of the accessibility issues on a page. Testing by a person, including with a screen reader and by keyboard, remains necessary.', 'inventivo-editorial-accessibility-checks' ) . '</p>';
 		echo '<p>' . esc_html__( 'These checks read the saved editor content of your posts and pages. Content added by your theme, by page builders, by shortcodes or by scripts is not read.', 'inventivo-editorial-accessibility-checks' ) . '</p>';
@@ -118,7 +118,7 @@ class Editorial_Accessibility_Checks_Admin {
 		echo '</p>';
 		$table->display();
 		echo '</form>';
-		// Fixed legal notice. Do not shorten, reword or make dismissible.
+		// Plain footer text on this screen only, not an admin notice.
 		echo '<p class="editorial-accessibility-checks-legal">' . esc_html__( 'This plugin does not determine, certify or guarantee conformance with WCAG, the European Accessibility Act, the German BFSG, the ADA or any other standard or law. Whether your website meets legal requirements is a question only you and your advisers can answer.', 'inventivo-editorial-accessibility-checks' ) . '</p>';
 		echo '</div>';
 	}
@@ -135,12 +135,12 @@ class Editorial_Accessibility_Checks_Admin {
 		} elseif ( 'editorial_accessibility_checks_busy' === $code ) {
 			$message = __( 'A scan batch is already running. Please try again later.', 'inventivo-editorial-accessibility-checks' );
 		} elseif ( 'editorial_accessibility_checks_dom_missing' === $code ) {
-			$message = __( 'The PHP DOM extension is required to run these checks.', 'inventivo-editorial-accessibility-checks' );
+			$message = __( 'The PHP DOM extension is required to run these checks. Ask your hosting provider to enable the PHP extensions dom and xml, then start the scan again.', 'inventivo-editorial-accessibility-checks' );
 		} elseif ( 'editorial_accessibility_checks_save_failed' === $code ) {
-			$message = __( 'The scan could not save its results. Please try again later.', 'inventivo-editorial-accessibility-checks' );
+			$message = __( 'The scan could not save its results. Please try again later. If this keeps happening, check the PHP error log of your site.', 'inventivo-editorial-accessibility-checks' );
 		} else {
-			$message = __( 'The scan could not read the posts. Please try again later.', 'inventivo-editorial-accessibility-checks' );
+			$message = __( 'The scan could not read the posts. Please try again later. If this keeps happening, check the PHP error log of your site.', 'inventivo-editorial-accessibility-checks' );
 		}
-		wp_admin_notice( esc_html( $message ), array( 'type' => 'info', 'attributes' => array( 'role' => 'status' ), 'dismissible' => false ) );
+		wp_admin_notice( esc_html( $message ), array( 'type' => 'info', 'attributes' => array( 'role' => 'status' ), 'dismissible' => true ) );
 	}
 }

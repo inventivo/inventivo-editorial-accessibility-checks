@@ -1,6 +1,6 @@
 # Baubericht: inventivo Editorial Accessibility Checks
 
-Stand: 10.09.2026. Version 1.0.0.
+Stand: 10.09.2026. Version 1.0.1 (Stand 11.11.2026, Guideline-11-Nacharbeit).
 
 ## Status
 

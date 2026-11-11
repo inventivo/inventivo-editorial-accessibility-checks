@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: inventivo Editorial Accessibility Checks 1.0.0\n"
+"Project-Id-Version: inventivo Editorial Accessibility Checks 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/inventivo-editorial-accessibility-checks\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-10T15:19:15+00:00\n"
+"POT-Creation-Date: 2026-11-11T15:39:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: inventivo-editorial-accessibility-checks\n"
@@ -20,9 +20,8 @@ msgid "inventivo Editorial Accessibility Checks"
 msgstr ""
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
 #: inventivo-editorial-accessibility-checks.php
-msgid "https://www.inventivo.de/"
+msgid "https://www.inventivo.de/wordpress-agentur/wordpress-plugins"
 msgstr ""
 
 #. Description of the plugin
@@ -33,6 +32,11 @@ msgstr ""
 #. Author of the plugin
 #: inventivo-editorial-accessibility-checks.php
 msgid "inventivo"
+msgstr ""
+
+#. Author URI of the plugin
+#: inventivo-editorial-accessibility-checks.php
+msgid "https://www.inventivo.de/"
 msgstr ""
 
 #: includes/class-editorial-accessibility-checks-admin.php:20
@@ -56,7 +60,7 @@ msgstr ""
 #: includes/class-editorial-accessibility-checks-admin.php:138
 #: includes/class-editorial-accessibility-checks-plugin.php:120
 #: includes/class-editorial-accessibility-checks-rules.php:47
-msgid "The PHP DOM extension is required to run these checks."
+msgid "The PHP DOM extension is required to run these checks. Ask your hosting provider to enable the PHP extensions dom and xml, then start the scan again."
 msgstr ""
 
 #: includes/class-editorial-accessibility-checks-admin.php:90
@@ -129,15 +133,11 @@ msgid "A scan batch is already running. Please try again later."
 msgstr ""
 
 #: includes/class-editorial-accessibility-checks-admin.php:140
-#: includes/class-editorial-accessibility-checks-plugin.php:98
-#: includes/class-editorial-accessibility-checks-plugin.php:105
-#: includes/class-editorial-accessibility-checks-plugin.php:110
-msgid "The scan could not save its results. Please try again later."
+msgid "The scan could not save its results. Please try again later. If this keeps happening, check the PHP error log of your site."
 msgstr ""
 
 #: includes/class-editorial-accessibility-checks-admin.php:142
-#: includes/class-editorial-accessibility-checks-plugin.php:153
-msgid "The scan could not read the posts. Please try again later."
+msgid "The scan could not read the posts. Please try again later. If this keeps happening, check the PHP error log of your site."
 msgstr ""
 
 #: includes/class-editorial-accessibility-checks-list-table.php:24
@@ -190,8 +190,18 @@ msgstr ""
 msgid "Every five minutes"
 msgstr ""
 
+#: includes/class-editorial-accessibility-checks-plugin.php:98
+#: includes/class-editorial-accessibility-checks-plugin.php:105
+#: includes/class-editorial-accessibility-checks-plugin.php:110
+msgid "The scan could not save its results. Please try again later."
+msgstr ""
+
 #: includes/class-editorial-accessibility-checks-plugin.php:117
 msgid "You cannot run these checks."
+msgstr ""
+
+#: includes/class-editorial-accessibility-checks-plugin.php:153
+msgid "The scan could not read the posts. Please try again later."
 msgstr ""
 
 #: includes/class-editorial-accessibility-checks-rules.php:17

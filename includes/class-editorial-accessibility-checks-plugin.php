@@ -117,7 +117,7 @@ class Editorial_Accessibility_Checks_Plugin {
 			return new WP_Error( 'editorial_accessibility_checks_permission', __( 'You cannot run these checks.', 'inventivo-editorial-accessibility-checks' ) );
 		}
 		if ( ! class_exists( 'DOMDocument' ) ) {
-			return new WP_Error( 'editorial_accessibility_checks_dom_missing', __( 'The PHP DOM extension is required to run these checks.', 'inventivo-editorial-accessibility-checks' ) );
+			return new WP_Error( 'editorial_accessibility_checks_dom_missing', __( 'The PHP DOM extension is required to run these checks. Ask your hosting provider to enable the PHP extensions dom and xml, then start the scan again.', 'inventivo-editorial-accessibility-checks' ) );
 		}
 		// Atomare Optionsanlage verhindert parallele Pakete; verwaiste Sperren laufen aus.
 		$locked = (int) get_option( self::LOCK, 0 );

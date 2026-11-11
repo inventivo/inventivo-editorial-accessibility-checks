@@ -44,7 +44,7 @@ class Editorial_Accessibility_Checks_Rules {
 			return self::finish( $result, $post_id );
 		}
 		if ( ! class_exists( 'DOMDocument' ) ) {
-			return new WP_Error( 'editorial_accessibility_checks_dom_missing', __( 'The PHP DOM extension is required to run these checks.', 'inventivo-editorial-accessibility-checks' ) );
+			return new WP_Error( 'editorial_accessibility_checks_dom_missing', __( 'The PHP DOM extension is required to run these checks. Ask your hosting provider to enable the PHP extensions dom and xml, then start the scan again.', 'inventivo-editorial-accessibility-checks' ) );
 		}
 		$previous = libxml_use_internal_errors( true );
 		libxml_clear_errors();

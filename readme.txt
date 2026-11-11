@@ -4,7 +4,7 @@ Tags: accessibility, a11y, wcag, content, editor
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,11 @@ By default it reads published posts and pages. Developers can extend the public 
 Deactivation removes the scheduled task and keeps results. Deletion removes the scheduled task, all result metadata and the batch-position options.
 
 == Changelog ==
+
+= 1.0.1 =
+* All notices on the plugin screen can now be dismissed.
+* Error messages now say how to resolve the problem (missing PHP DOM extension, failed reads or saves).
+* No change to the checks. The plugin shows notices only on its own screen under Tools, never elsewhere in the admin.
 
 = 1.0.0 =
 * Initial release with five editorial checks, scheduled batches and a results list.
